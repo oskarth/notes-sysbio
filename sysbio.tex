@@ -47,85 +47,8 @@ be taken up by the investigation of these mathematical tools.
 
 The main paper of interest.
 
-\chapter{Perturbation theory}
+\section{Perturbation Theory}
 
-\section{Introduction}
-
-Perturbation theory is useful whenever you can't find exact solutions
-to a system of differential equations. In essence it's about dividing
-a problem into a solvable part and an approximated part.
-
-The main text source we will use is \textit{A first look at
-  perturbation theory} by Simmonds. We will also look at \textit{Lin
-  and Segel} for an application.
-
-\section{Some simple examples}
-
-Let's start by two simple examples, one of regular one one of singular
-perturbation. These are based on the book by Simmonds.
-
-We have an equation $z^2 - 2z + \epsilon$ where $\epsilon$ is a small
-error term. Its roots are:
-
-\begin{gather}
-  z_1(\epsilon)=1 - \sqrt{1-\epsilon} \\
-  z_2(\epsilon)=1 + \sqrt{1-\epsilon}
-\end{gather}
-
-This is a regular perturbation. We are going to analyze it more in a
-second. It is regular because a small change in $\epsilon$ has a small
-effect on the overall system.
-
-Compare this to the equation $z^2 - 2z + \epsilon$ and its roots:
-
-\begin{gather}
-  z_1(\epsilon)=\frac{1 - \sqrt{1-\epsilon}}{\epsilon} \\
-  z_2(\epsilon)=\frac{1 + \sqrt{1-\epsilon}}{\epsilon}
-\end{gather}
-
-For the second example, we notice that removing the $\epsilon$ means
-going from linear and quadratic. This is a qaulitative change, and is
-indicative of a singular perturbation.
-
-TODO: We haven't given an introduction to the difference of regular
-and singular perturbation.
-
-We also see that, as $\epsilon \to 0$, $\frac{2}{\epsilon}$
-$z_2 \rightarrow \infty$. For $z_1$ it's not quite as obvious, but
-applying L'Hospital's rule we get:
-
-\begin{equation}
-  \lim_{\epsilon \to 0} \frac{1 - \sqrt{1-\epsilon}}{\epsilon} =
-  \lim_{\epsilon \to 0} \frac{1}{2\sqrt{1-\epsilon}} = \frac{1}{2}
-\end{equation}
-
-TODO: Power series expansions for $\sqrt{1-\epsilon}$ around
-$\epsilon$. Roughly corresponds to equation 5 through 20.
-
-What if we don't know the quadratic formula? Let's assume we don't,
-i.e. we don't have an algebraic expression of the roots.
-
-This is an asymptotic perturbation expansion.
-\begin{equation}
-  z(\epsilon) = a_0 + a_1\epsilon + a_2\epsilon^2 + a_N\epsilon^N +
-  R_{N+1}(\epsilon), R_{N+1}(\epsilon) = O(\epsilon^{N+1})
-\end{equation}
-
-It allows us to see what the effects of a small perturbation
-$\epsilon$ around 0 are. We will use this to do a re-analysis of the
-regular problem.
-
-We assume that each root of $P_\epsilon(z) = z^2 - 2z + \epsilon$ has
-a representation for some N like above. Then we want to determine the
-unknown coefficients.
-
-Pedagogical lead towards fundamental perturbation theorem. Depends on Big O
-explanation.
-
-\textbf{Fundamental theorem of perturbation theory}
-If $A_0 + A_1\epsilon + .. + A_N\epsilon^N + O(\epsilon^{n+1}) triple
-= 0$ for $\epsilon$ sufficiently small and if coefficients $A_i$
-independent of $\epsilon$, then $A_0=A_1=...=A_N=0$
-
+Break out perturbation theory to separate document.
 
 \end{document}
